@@ -1,0 +1,2 @@
+
+(()=>{const e=document,t=e.getElementById("select"),n=e.getElementById("mensaje"),a=e.getElementById("btn"),s=new SpeechSynthesisUtterance;let c=[];e.addEventListener("DOMContentLoaded",n=>{speechSynthesis.addEventListener("voiceschanged",n=>{(c=speechSynthesis.getVoices()).forEach(n=>{const a=e.createElement("option");a.value=n.name,a.textContent=n.name,t.appendChild(a)})})}),e.addEventListener("change",e=>{e.target===t&&(s.voice=c.find(t=>t.name===e.target.value))}),e.addEventListener("click",e=>{e.target===a&&(s.text=n.value,speechSynthesis.speak(s))})})();

@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+h1{
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.container{
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+textarea{
+    resize:none;
+    width: 100%;
+    border: medium solid green;
+    outline: none;
+    padding: 5px;
+}
+
+button{
+    padding: 7px 10px;
+    font-size: 1.2rem;
+    background-color: #8BDB81;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #19282F;
+}
+select{
+    outline: none;
+    padding: 3px;
+    width: 100%;
+}
+
+option{
+    text-align: center;
+}
+
